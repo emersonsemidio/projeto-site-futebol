@@ -1,0 +1,306 @@
+/* CONFIGURAÇÕES INICIAIS */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header{
+  display: flex;
+  justify-content: left;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: black;
+  }
+
+a{
+  text-decoration: none;
+}
+
+/* LOGO E NOME DA PAGINA */
+
+
+.logo{
+  display: flex;
+  justify-content: left;
+}
+
+
+.logo a{
+  color: white;
+}
+
+.logoName{
+  padding-top: 15px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.logoimg{
+  width: 60px;
+  padding: 4px;
+}
+
+/* Carrossel */
+
+.carrossel{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding-top: 30px;
+}
+
+/* BACKGROUND */
+
+.fundo{
+  opacity: 0.7;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+}
+
+/* MENU */
+
+.menu{
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  padding-left: 25px;
+  padding-top: 3px;
+  background-color: black;
+}
+
+.menu li a{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: block;
+  font-size: 25px;
+  color: white;
+  font-weight: bold;
+}
+
+.menu li a:hover{
+  background-color: rgb(255, 0, 0);
+  color: black;
+}
+
+/* PLAYLIST */
+
+.music{
+  margin-left: auto;
+  display: flex;
+  padding: 10px;
+  padding-right: 20px;
+}
+
+.music span{
+  font-size: 46px; 
+  color: white;
+}
+
+.music h2{
+  color: red;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-left: 15px;
+}
+
+/* Quizes e Curiosidades */
+
+.quizes-curiosidades{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 200px;
+  column-gap: 100px;
+  row-gap: 50px;
+}
+
+.quizes-curiosidades div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  font-weight: bold;
+}
+.quizes-curiosidades img{
+  width: 300px;
+  border: solid 4px black;
+}
+
+.quizes-curiosidades h2{
+  color: white;
+  background-color: rgba(13, 72, 100, 0.381);
+  border: solid 2px black;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.fundo-botao-jogar{
+  display: flex;
+  justify-content: center;
+  border: solid 2px black;
+  border-radius: 10px;
+}
+
+.fundo-botao-jogar:hover {
+  background-color: white;
+}
+
+.fundo-botao-jogar a{
+  padding: 8px 28px;
+  color: black;
+}
+
+/* 1 ° Historia */
+
+.brasil_na_copa{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-top: 100px;
+  gap: 120px;
+}
+
+.brasil_na_copa img{
+  width: 500px;
+  height: 300px;
+  border: solid 4px black;  
+}
+
+
+.brasil_na_copa .campo_paragrafo{
+  padding: 30px;
+  font-size: 23px;
+  color: white;
+  width: 700px;
+  background-color: rgba(13, 72, 100, 0.793);  
+  border: solid 4px black;
+  border-radius: 10px;
+}
+
+.imagem-com-legenda p{
+  display: flex;
+  font-size: 20px;
+  color: white;
+  background-color: rgba(13, 72, 100, 0.793);
+  border: solid 4px black;
+  border-radius: 10px;
+  padding: 10px;
+  justify-content: center;
+
+}
+
+/* QUIZES */
+
+.centralizar-quiz {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+}
+
+.questions h2{
+  color: white;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+
+.questions{
+  display: flex;
+  border-radius: 20px;
+  border: solid 4px black;
+  width: 1000px;
+  height: 500px;
+  justify-content: center;
+  background: linear-gradient(90deg, rgba(13, 72, 100, 0.793) 0%, rgba(13, 72, 100, 0.793) 50%, rgba(13, 72, 100, 0.793) 100%);
+}
+
+.content{
+  display: flex;
+  width: 80%;
+  height: 100%;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.content img{
+  border: solid 4px black;
+  border-radius: 10px;
+}
+
+.content .quantidade-questoes{
+  color: white;
+}
+
+.content div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.spnQtd{
+  text-align: end;  
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.answers{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.question{
+  display: flex;
+  font-size: 25px;
+  color: white;
+  justify-content: center;
+}
+
+.finish{
+  display: none;
+  flex-direction: column;
+}
+
+.finish span{
+  margin: auto;
+  color: white;
+  font-size: 50px;
+}
+
+.finish button{
+  text-align: center;
+}
+
+button {
+  width: 100%;
+  text-align: start;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #008CCC;
+  color: white;
+  
+}
+
+
+
+
