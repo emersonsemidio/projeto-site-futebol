@@ -24,5 +24,6 @@ Este projeto simula um site de futebol interativo que permite aos usuários expl
 
 https://emersonsemidio.github.io/projeto-site-futebol/
 
-![Uploading image.png…]()
+![image](https://github.com/user-attachments/assets/dc19f285-0094-4e81-93c9-44c6cb78cec9)
+
 
