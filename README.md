@@ -1,7 +1,3 @@
-Aqui está um exemplo de `README.md` para um site de futebol com quizzes, curiosidades e uma área de contato:
-
----
-
 # Site de Futebol ⚽
 
 Este projeto simula um site de futebol interativo que permite aos usuários explorar quizzes, aprender curiosidades sobre campeonatos e enviar mensagens ou sugestões por meio de um formulário de contato.
