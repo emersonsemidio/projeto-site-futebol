@@ -1,1 +1,4 @@
 audios/playlist-site.mp3
+
+videos/*
+!videos/Video-Apresentacao.mp4

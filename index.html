@@ -34,21 +34,19 @@
     <h1>Video de Apresentação do site</h1>
   </div>
   <div id="tv-radio">
-    <img src="imagens/radio-tv.png" alt="" usemap="#meu-mapa">
+    <img id="tv" src="imagens/tv.png">
 
-    <map name="meu-mapa">
-      <area shape="circle" coords="645,194,50" alt="" style="cursor: pointer;" target="janela"
-        onclick="getProximoVideo();">
-    </map>
-    <video src="videos/Video-Apresentacao.mp4" id="componente-tv" type="video/mp4" controls></video>
+    <!-- <video src="videos/Video-Apresentacao.mp4" id="componente-tv" type="video/mp4" controls></video> -->
+    <iframe id="componente-tv" src="./videos/Video-Apresentacao.mp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+    <div class="troca_canais">
+      <button onclick="getProximoVideo()"> Próximo video >>>> </button>
+    </div>    
   </div>
-
-
-
-
-
 </body>
 
-<script src="futebol.js"></script>
+
+
+<script src="videos.js"></script>
 
 </html>

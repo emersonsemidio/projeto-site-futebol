@@ -1,35 +1,65 @@
 export default [
   {
-    question: "Quantos gols o Messi tem em copas do Mundo?",
+    question: "Quem venceu o Campeonato Brasileiro de 1992?",
     answers: [
-      { option: "3", correct: true },
-      { option: "2", correct: false },
-      { option: "4", correct: false },
-      { option: "5", correct: false }
+      { option: "Flamengo", correct: true },
+      { option: "Vasco", correct: false },
+      { option: "São Paulo", correct: false },
+      { option: "Palmeiras", correct: false },
     ],
   },
   {
-    question: "Quanto é 5 x 2?",
+    question: "Em que ano o Corinthians venceu seu primeiro Campeonato Brasileiro?",
     answers: [
-      { option: "9", correct: false },
+      { option: "1990", correct: true },
+      { option: "1989", correct: false },
+      { option: "1994", correct: false },
+      { option: "1998", correct: false },
+    ],
+  },
+  {
+    question: "Qual time venceu o Campeonato Brasileiro de 2005?",
+    answers: [
+      { option: "Corinthians", correct: true },
+      { option: "Internacional", correct: false },
+      { option: "São Paulo", correct: false },
+      { option: "Santos", correct: false },
+    ],
+  },
+  {
+    question: "Quantos títulos do Campeonato Brasileiro o Palmeiras conquistou até 2020?",
+    answers: [
       { option: "10", correct: true },
-      { option: "11", correct: false },
+      { option: "8", correct: false },
+      { option: "7", correct: false },
+      { option: "6", correct: false },
     ],
   },
   {
-    question: "Quanto é 10 x 8?",
+    question: "Quem venceu o Campeonato Brasileiro de 2010?",
     answers: [
-      { option: "800", correct: false },
-      { option: "90", correct: false },
-      { option: "80", correct: true },
+      { option: "Fluminense", correct: true },
+      { option: "Corinthians", correct: false },
+      { option: "Cruzeiro", correct: false },
+      { option: "Vasco", correct: false },
     ],
   },
   {
-    question: "Quanto é 7 x 7?",
+    question: "Em que ano o Cruzeiro venceu o Campeonato Brasileiro pela segunda vez consecutiva?",
     answers: [
-      { option: "70", correct: false },
-      { option: "56", correct: false },
-      { option: "49", correct: true },
+      { option: "2014", correct: true },
+      { option: "2013", correct: false },
+      { option: "2015", correct: false },
+      { option: "2012", correct: false },
+    ],
+  },
+  {
+    question: "Qual clube venceu o Campeonato Brasileiro de 1997?",
+    answers: [
+      { option: "Vasco", correct: true },
+      { option: "Palmeiras", correct: false },
+      { option: "Flamengo", correct: false },
+      { option: "Corinthians", correct: false },
     ],
   },
 ];

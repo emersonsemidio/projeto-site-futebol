@@ -48,28 +48,73 @@ a{
 
 
 
-#componente-tv{
+/* #componente-tv{
   position: absolute;
-  left: 80px;
-  top: 100px;
-  width: 460px;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 46%;
+  top : 10%;
+} */
+ #componente-tv{
+  position: absolute;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  width: 46%;
+  height: 68%;
+  top : 10%;
 }
 
+
 #titulo-index{
+  display: flex;
   position: relative;
+  justify-content: center;
   text-align: center;
   top: 130px;
+  left: 3%;
   color: white;
   text-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
 }
 
 div#tv-radio {
   position: relative;
-  width: 900px;
-  height: 550px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   left: 50px;
   top: 150px;
   margin: auto;
+}
+
+div#tv-radio #tv{
+  width: 65%;
+  border-radius: 10px;
+}
+
+.troca_canais{
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 79%;
+  left: 60%;
+}
+
+.troca_canais button{
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0); /* Branco com 50% de transparência */
+  border: 10px solid red;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.troca_canais button:hover{
+  background-color: rgba(255, 255, 255, 0);
+  color: gray;
 }
 
 /* BACKGROUND */
@@ -113,28 +158,6 @@ header#menu-header{
   background-color: rgb(255, 0, 0);
   color: black;
 }
-
-/* PLAYLIST */
-
-.music{
-  margin-left: auto;
-  display: flex;
-  padding: 10px;
-  padding-right: 20px;
-}
-
-.music span{
-  font-size: 46px; 
-  color: white;
-}
-
-.music h2{
-  color: red;
-  font-size: 20px;
-  padding-top: 15px;
-  padding-left: 15px;
-}
-
 /* Quizes e Curiosidades */
 
 .quizes-curiosidades{
@@ -155,6 +178,8 @@ header#menu-header{
 }
 .quizes-curiosidades img{
   width: 300px;
+  height: 200px;
+  object-fit: cover;
   border: solid 4px black;
 }
 
@@ -181,6 +206,13 @@ header#menu-header{
 .fundo-botao-jogar a{
   padding: 8px 28px;
   color: black;
+}
+
+.img-quiz{
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border: solid 4px black;
 }
 
 /* 1 ° Historia */
@@ -210,6 +242,28 @@ header#menu-header{
   background-color: rgba(13, 72, 100, 0.793);  
   border: solid 4px black;
   border-radius: 10px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 1);
+}
+
+.campo_paragrafo p{
+  display: flex;
+  justify-content: left;
+  text-indent: 50px;
+  font-weight: lighter;
+  margin-bottom: 20px;
+}
+
+.campo_paragrafo a{
+  color: black;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+  font-style: italic;
+}
+
+.campo_paragrafo a:hover{
+  color: white;
+  background-color: black;
 }
 
 .imagem-com-legenda p{
@@ -246,9 +300,9 @@ header#menu-header{
   border-radius: 20px;
   border: solid 4px black;
   width: 1000px;
-  height: 500px;
+  height: 600px;
   justify-content: center;
-  background: linear-gradient(90deg, rgba(13, 72, 100, 0.793) 0%, rgba(13, 72, 100, 0.793) 50%, rgba(13, 72, 100, 0.793) 100%);
+  background: rgba(9, 23, 29, 0.793);
 }
 
 .content{
@@ -290,6 +344,11 @@ header#menu-header{
   gap: 20px;
 }
 
+.answers button{
+  background-color: rgba(13, 72, 100, 0.793);
+  text-align: center;
+}
+
 .question{
   display: flex;
   font-size: 25px;
@@ -321,7 +380,7 @@ button {
   cursor: pointer;
   background-color: #008CCC;
   color: white;
-  
+ 
 }
 
 /*FORMULARIO FEEDBACK*/
