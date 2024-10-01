@@ -34,7 +34,7 @@ a{
 }
 
 .logoName{
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 10px;
   text-decoration: none;
 }
@@ -86,6 +86,16 @@ div#tv-radio {
   left: 50px;
   top: 150px;
   margin: auto;
+}
+
+@media screen and (max-height: 600px){
+  #titulo-index{
+    top: 60px;
+  }
+
+  div#tv-radio {
+    top: 60px;
+  }
 }
 
 div#tv-radio #tv{
@@ -144,8 +154,8 @@ header#menu-header{
 }
 
 .menu li a{
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   padding-left: 50px;
   padding-right: 50px;
   display: block;
@@ -305,6 +315,16 @@ header#menu-header{
   background: rgba(9, 23, 29, 0.793);
 }
 
+@media screen and (max-height: 700px){
+  .questions img{
+    display: none;
+  }
+
+  .questions{
+    height: 400px;
+  }
+}
+
 .content{
   display: flex;
   width: 80%;
@@ -435,6 +455,54 @@ button:hover {
   width: 1000px;
   gap: 10px;
   height: 500px;
+}
+
+.campo-forms{
+  position: relative;  
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.campo-forms textarea{
+  max-height: 200px;
+}
+
+/* Colocando "Nome" e "Assunto" lado a lado */
+.campo-forms-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  gap: 20px;
+}
+
+/* Responsividade  do formulario abaixo de 650px*/
+@media screen and (max-height: 650px){
+  /* Definições gerais para o formulário */
+  .feedback {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .formulario {
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 700px;
+    max-height: 400px;
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+  }
+
+  .campo-forms textarea{
+    max-height: 100px;
+  }
 
 }
 

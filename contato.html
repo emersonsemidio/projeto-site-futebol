@@ -29,19 +29,32 @@
 
     <div class="feedback">
       <form class="formulario" action="#" method="post">
-          <h2>Formulário de Contato</h2>
-          <br>
-          <label for="name">Nome:</label>
-          <input placeholder="Escreva aqui seu nome" type="text" id="name" name="name" required>
-          
-          <label for="assunto">Assunto</label>
-          <input placeholder="Escreva aqui sobre o que quer falar" type="text" id="assunto" name="assunto" required>
-          
+        <h2>Formulário de Contato</h2>
+        <br>
+    
+        <!-- Agrupando Nome e Assunto lado a lado -->
+        <div class="campo-forms-container">
+          <div class="campo-forms">
+            <label for="name">Nome:</label>
+            <input placeholder="Escreva aqui seu nome" type="text" id="name" name="name" required>
+          </div>
+    
+          <div class="campo-forms">
+            <label for="assunto">Assunto:</label>
+            <input placeholder="Escreva aqui sobre o que quer falar" type="text" id="assunto" name="assunto" required>
+          </div>
+        </div>
+        
+        <!-- Campo de mensagem abaixo -->
+        <div class="campo-forms">
           <label for="message">Mensagem:</label>
           <textarea placeholder="Escreva aqui seu feedback ou conselhos para a página" id="message" name="message" rows="4" required></textarea>
-          
-          <button class="botao-enviar" type="submit" >Enviar</button>
+        </div>
+        
+        <button class="botao-enviar" type="submit">Enviar</button>
       </form>
+    </div>
+    
 
 	</body>
 
